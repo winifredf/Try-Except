@@ -2,5 +2,7 @@ value = 10/0
 try:
     number = int(input("Enter a number: "))
     print(number)
-except:
-    print("Invalid input")
+except ZeroDivisionError:
+    print("Divided by zero")
+except ValueError:
+    print("Invalid Input")
